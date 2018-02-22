@@ -10106,7 +10106,7 @@ body {
   .list-albums .list-feature li .album-icon {
     float: left;
     width: 100%;
-    overflow: hidden;
+    overflow: visible;
     position: relative;
     left: 50%;
     right: auto;
@@ -10132,10 +10132,58 @@ body {
     margin-bottom: 40px;
   }
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1024px) {
   .list-albums .list-feature li .album-icon .thumbs-album {
     position: relative !important;
-    left: 50%;
+    left: 40%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .list-albums .list-feature li .album-icon .thumbs-album {
+    position: relative !important;
+    left: 170%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (min-width: 412px) and (max-width: 767px) {
+  .list-albums .list-feature li .album-icon .thumbs-album {
+    position: relative !important;
+    left: 83%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (min-width: 375px) and (max-width: 411px) {
+  .list-albums .list-feature li .album-icon .thumbs-album {
+    position: relative !important;
+    left: 75%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+}
+@media only screen and (max-width: 374px) {
+  .list-albums .list-feature li .album-icon .thumbs-album {
+    position: relative !important;
+    left: 70%;
     right: auto;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
@@ -10184,7 +10232,7 @@ body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/albums/default-disc-large.jpg) no-repeat center center;
+  background: url(../img/albums/citythemask-disc.jpg) no-repeat center center;
   background-size: 193px 193px;
   z-index: 9;
 }
@@ -10197,7 +10245,7 @@ body {
   width: 193px;
   height: 194px;
   float: left;
-  background: url(../img/albums/nfa-disc-large.jpg) no-repeat center center;
+  background: url(../img/albums/phtheforest-disc.jpg) no-repeat center center;
   background-size: 193px 193px;
   z-index: 9;
 }
@@ -10626,7 +10674,8 @@ body {
   padding-bottom: 6rem;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  color: #525252;
+  /* color: #525252; */
+  color: #FFFFFF;
 }
 .contactSingle .singleBlogForm form {
   padding-top: 0;
@@ -10664,7 +10713,8 @@ body {
   padding-bottom: 6rem;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
-  color: #525252;
+  /* color: #525252; */
+  color: #FFFFFF;
 }
 .contactTop h4 {
   font-size: 1.6rem;
@@ -10673,14 +10723,16 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-weight: 400;
   padding-bottom: 3rem;
-  color: #757575;
+  /* color: #757575; */
+  color: #FFFFFF;
 }
 .contactTop p {
   padding: 0;
   margin: 0;
   font-weight: 400;
   font-size: 1.4rem;
-  color: #555454;
+  /* color: #555454; */
+  color: #FFFFFF;
   padding-bottom: 5rem;
   line-height: 2.4rem;
 }
@@ -10692,7 +10744,8 @@ body {
 .contactTop .contactInfo ul li {
   font-family: 'Karla', sans-serif;
   font-weight: 600;
-  color: #525252;
+  /* color: #525252; */
+  color: #FFFFFF;
   font-size: 1.5rem;
   position: relative;
   text-transform: uppercase;
@@ -10701,7 +10754,8 @@ body {
 .contactTop .contactInfo ul li a {
   font-family: 'Karla', sans-serif;
   font-weight: 400;
-  color: #757575;
+  /* color: #757575; */
+  color: #FFFFFF;
   font-size: 1.5rem;
   position: absolute;
   left: 0;
@@ -12797,6 +12851,10 @@ body > div.fusion-fullwidth.fullwidth-box.fusion-fullwidth-2.fusion-parallax-lef
 }
 .open-menu.affix span {
   background-color: #000;
+}
+.rightTopHeader .myContact {
+  position: relative;
+  top: 5px;
 }
 .rightTopHeader {
   display: inline-flex;
